@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ namespace sw
 {
     public class ControlSystem : MonoBehaviour
     {
-        [SerializeField, Header("¥Ø¼Ğª«¥ó")]
+        [SerializeField, Header("ç›®æ¨™ç‰©ä»¶")]
         private Transform target;
 
         // Start is called before the first frame update
@@ -22,12 +22,12 @@ namespace sw
         }
 
         /// <summary>
-        /// ­±¬Û¥Ø¼Ğ
+        /// é¢ç›¸ç›®æ¨™
         /// </summary>
         private void LookatTarget()
         {
-            transform.LookAt(target);//ÅÜ§Î¤¸¥ó.­±¦V(¥Ø¼Ğª«¥ó)
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);//x z¶bÂk0
+            transform.LookAt(target);//è®Šå½¢å…ƒä»¶.é¢å‘(ç›®æ¨™ç‰©ä»¶)
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);//x zè»¸æ­¸0
         }
     }
 }
